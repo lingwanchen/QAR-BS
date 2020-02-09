@@ -4,10 +4,10 @@ qor_bs<-function(Y1, Y2, delta1, delta2, Zmat, tauseq)
 {
   ## Y1: time to the first event 
   ## Y2: time to the second event 
-  ## delta1: observed indicator function for the first event
-  ## delta2: observed indicator function for the second event
+  ## delta1: the observed indicator for the first event
+  ## delta2: the observed indicator for the second event
   ## Zmat: the design matrix of covariates, including the intercept
-  ## tauseq: the quantile of interest
+  ## tauseq: the quantile of interest 
   
   n<-length(Y1)
   m<-length(tauseq)
