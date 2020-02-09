@@ -1,3 +1,5 @@
+## qor_bs is the main function for using the proposed method 
+
 qor_bs<-function(Y1, Y2, delta1, delta2, Zmat, tauseq)
 {
   ## Y1: time to the first event 
