@@ -7,7 +7,6 @@ library(msm)
 source("required_funcs.r") ## required functions for the proposed method
 source("qor_bs.R")         ## qor_bs is the main function for the proposed method
 
-write.table(Data,"sampledata.txt", col.names = T, row.names = F, sep=" ")
 Data<-read.table("sampledata.txt",header = T)
 
 Y1<-Data$Y1
