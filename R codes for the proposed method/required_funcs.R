@@ -1,16 +1,4 @@
-### Copula ###
-## for Fx,y ##
-flip.clay.copu<-function(u, v, theta){
-  copula<-u+v-1+ pmax( ((1-u)^(-theta) + (1-v)^(-theta)-1)^(-1/theta), 0)
-  return(copula)
-}
-
-## qor function ##
-
-qor.fun<-function(copula, u, v){
-  qor<-copula*(1-u-v+copula)/((u-copula)*(v-copula))
-  return(qor)
-}
+#########  required functions for the proposed method  ##########
 
 ## Survival function for univariate censoring setting
 Surv.uni<-function(Y, delta) {
